@@ -6,3 +6,4 @@ metadata:
 spec:
   addresses:
     - {{ .Values.config.ipRange }}
+  autoAssign: {{ .Values.config.autoAssign }}
