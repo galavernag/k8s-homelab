@@ -1,8 +1,8 @@
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool
 metadata:
-  name: { { .Values.config.poolName } }
-  namespace: { { .Release.Namespace } }
+  name: {{ .Values.config.poolName }}
+  namespace: {{ .Release.Namespace }}
 spec:
   addresses:
-    - { { .Values.config.ipRange } }
+    - {{ .Values.config.ipRange }}
